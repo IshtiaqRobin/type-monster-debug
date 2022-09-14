@@ -16,13 +16,26 @@
             <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
+                    What is the difference between local storage and session storage?
                 </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                    <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                <div class="accordion-body">localStorage and sessionStorage are relatively new APIs (meaning, not all
+                    legacy browsers will support them) and are near identical (both in APIs and capabilities) with the
+                    sole exception of persistence. sessionStorage (as the name suggests) is only available for the
+                    duration of the browser session (and is deleted when the tab or window is closed) - it does,
+                    however, survive page reloads.
+
+                    Clearly, if the data you are storing needs to be available on an ongoing basis then localStorage is
+                    preferable to sessionStorage - although you should note both can be cleared by the user so you
+                    should not rely on the continuing existence of data in either case.
+
+                    localStorage and sessionStorage are perfect for persisting non-sensitive data needed within client
+                    scripts between pages (for example: preferences, scores in games). The data stored in localStorage
+                    and sessionStorage can easily be read or changed from within the client/browser so should not be
+                    relied upon for storage of sensitive or security-related data within applications.
+                </div>
             </div>
         </div>
         <div class="accordion-item">
@@ -36,7 +49,8 @@
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
                     <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
-                    being filled with some actual content.</div>
+                    being filled with some actual content.
+                </div>
             </div>
         </div>
         <div class="accordion-item">
@@ -51,7 +65,8 @@
                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
                     <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
                     happening here in terms of content, but just filling up the space to make it look, at least at first
-                    glance, a bit more representative of how this would look in a real-world application.</div>
+                    glance, a bit more representative of how this would look in a real-world application.
+                </div>
             </div>
         </div>
     </div>
