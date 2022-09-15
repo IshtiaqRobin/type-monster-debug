@@ -7,85 +7,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/Question_mark_icon-removebg-preview.png" type="image/x-icon">
     <title>Important Question</title>
 </head>
 
 <body>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    What is the difference between local storage and session storage?
+    <!-- header section -->
+    <header class="container pt-4">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-semibold" href="#">Qs <span class="text-bg-danger p-2 rounded">
+                        Slover</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">localStorage and sessionStorage are relatively new APIs (meaning, not all
-                    legacy browsers will support them) and are near identical (both in APIs and capabilities) with the
-                    sole exception of persistence. sessionStorage (as the name suggests) is only available for the
-                    duration of the browser session (and is deleted when the tab or window is closed) - it does,
-                    however, survive page reloads.
 
-                    Clearly, if the data you are storing needs to be available on an ongoing basis then localStorage is
-                    preferable to sessionStorage - although you should note both can be cleared by the user so you
-                    should not rely on the continuing existence of data in either case.
+                <div class="d-flex" role="search">
+                    <button class="btn btn-outline-primary text-bg-primary p-2 px-3 rounded fw-semibold"
+                        type="submit">Blog</button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                    localStorage and sessionStorage are perfect for persisting non-sensitive data needed within client
-                    scripts between pages (for example: preferences, scores in games). The data stored in localStorage
-                    and sessionStorage can easily be read or changed from within the client/browser so should not be
-                    relied upon for storage of sensitive or security-related data within applications.
+    <!-- some Important question -->
+    <main>
+        <section class="container mt-5">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is the difference between local storage and session storage?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">localStorage and sessionStorage are relatively new APIs (meaning,
+                            not
+                            all
+                            legacy browsers will support them) and are near identical (both in APIs and capabilities)
+                            with
+                            the
+                            sole exception of persistence. sessionStorage (as the name suggests) is only available for
+                            the
+                            duration of the browser session (and is deleted when the tab or window is closed) - it does,
+                            however, survive page reloads.
+
+                            Clearly, if the data you are storing needs to be available on an ongoing basis then
+                            localStorage
+                            is
+                            preferable to sessionStorage - although you should note both can be cleared by the user so
+                            you
+                            should not rely on the continuing existence of data in either case.
+
+                            localStorage and sessionStorage are perfect for persisting non-sensitive data needed within
+                            client
+                            scripts between pages (for example: preferences, scores in games). The data stored in
+                            localStorage
+                            and sessionStorage can easily be read or changed from within the client/browser so should
+                            not be
+                            relied upon for storage of sensitive or security-related data within applications.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            What is the difference between local scope and global scope?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">In a browser environment, the global scope is controlled by the
+                            window
+                            object while in Node. js, it's controlled by the global object. Block scopes are what you
+                            get
+                            when
+                            you use if statements, for statements, and the like.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            What is the event loop in javascript and what does it do?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate
+                            the
+                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                            exciting
+                            happening here in terms of content, but just filling up the space to make it look, at least
+                            at
+                            first
+                            glance, a bit more representative of how this would look in a real-world application.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            How to get undefined value in javascript?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">We learned that a numerical expression is undefined when there is no
+                            answer
+                            or when you get division by zero. We might get division by zero for those numerical
+                            expressions
+                            with
+                            variables and a denominator. To find the points where the numerical expression is undefined,
+                            we
+                            set
+                            the denominator equal to zero and solve.
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    What is the difference between local scope and global scope?
-                </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">In a browser environment, the global scope is controlled by the window
-                    object while in Node. js, it's controlled by the global object. Block scopes are what you get when
-                    you use if statements, for statements, and the like.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    What is the event loop in javascript and what does it do?
-                </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                    happening here in terms of content, but just filling up the space to make it look, at least at first
-                    glance, a bit more representative of how this would look in a real-world application.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    How to get undefined value in javascript?
-                </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">We learned that a numerical expression is undefined when there is no answer
-                    or when you get division by zero. We might get division by zero for those numerical expressions with
-                    variables and a denominator. To find the points where the numerical expression is undefined, we set
-                    the denominator equal to zero and solve.
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
 
     <!-- script file -->
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
